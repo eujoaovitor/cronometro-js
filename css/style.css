@@ -1,31 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --gree-color: #008000;
+    --gray-color: #808080;
+    --red-color: #ff0000;
+}
+
 body {
-    background-color: black;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 h1 {
-    color: white;
+    color: var(--white-color);
+    font-size: 4rem;
 }
 
-div {
-    text-align: center;
+.comands {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-button {
-    height: 2.2em;
-    width: 5.5em;
+.comands button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 500;
     border: none;
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
 }
 
 .start-btn {
-    background-color: green;
+    background-color: var(--gree-color);
 }
 
 .pause-btn {
-    background-color: gray;
+    background-color: var(--gray-color);
 }
 
 .stop-btn {
-    background-color: red;
+    background-color: var(--red-color);
 }
